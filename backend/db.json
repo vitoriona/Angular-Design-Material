@@ -14,6 +14,16 @@
       "id": 3,
       "name": "Sansung S20+",
       "price": 5000.89
+    },
+    {
+      "name": "Geladeira ",
+      "price": "3200,50",
+      "id": 4
+    },
+    {
+      "name": "Computador",
+      "price": "3650,78",
+      "id": 5
     }
   ]
 }
