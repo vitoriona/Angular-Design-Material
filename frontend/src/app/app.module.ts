@@ -1,3 +1,4 @@
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -18,8 +19,17 @@ import { MatCardModule } from '@angular/material/card';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
-// Dentro das declarations se coloca os Components, Directives e Pipes
+import { HttpClientModule} from '@angular/common/http';
+
+import { FormsModule } from '@angular/forms'
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
+
+// Components, Directives e Pipes
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +40,7 @@ import { ForDirective } from './directives/for.directive';
     ProductCrudComponent,
     RedDirective,
     ForDirective,
+    ProductCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +49,13 @@ import { ForDirective } from './directives/for.directive';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
