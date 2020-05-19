@@ -17,13 +17,18 @@
     },
     {
       "name": "Geladeira ",
-      "price": 3200.50,
+      "price": 3200.5,
       "id": 4
     },
     {
       "name": "Computador",
       "price": 3650.78,
       "id": 5
+    },
+    {
+      "name": "Emilly Cunha",
+      "price": "1.99",
+      "id": 6
     }
   ]
 }
